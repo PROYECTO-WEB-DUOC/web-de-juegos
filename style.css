@@ -1,7 +1,33 @@
 body{
-    background-color: #5E5CC3;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,22,133,1) 0%, rgba(13,166,225,1) 0%, rgba(0,212,255,1) 0%, rgba(40,69,162,1) 3%, rgba(39,72,164,1) 50%, rgba(40,68,162,1) 97%, rgba(5,196,244,1) 100%);
+}
+
+
+.titulo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration:underline;
+}
+
+.imagen{
+    width: 90%;
+    padding-left: 10%;
     
 }
-#Modalsesion{
-    margin-left: 100px;
+.card{
+    margin-left: 7.5%;
+    
+}
+
+.juntar{
+    display: flex;
+}
+
+.titulo2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-left: 5%;
+    text-decoration:underline;
 }
