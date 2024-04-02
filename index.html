@@ -20,7 +20,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">inicio
+                <a class="nav-link active" aria-current="page" href="#">Inicio
                 </a>            
               </li>
 
@@ -44,10 +44,11 @@
               
             </form>   
 <!-- modal-->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</button>
+<button type="button" class="btn btn-primary" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</button>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
+
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
@@ -57,17 +58,18 @@
         <form>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Correo</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="email" class="form-control" >
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Contraseña</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <input type="password" class="form-control" ></input>
           </div>
         </form>
+        <p class="registrarse">¿No tienes una cuenta? <a href="registro/registro.html">Registrate</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+        <button type="button" class="btn btn-primary" >Iniciar Sesion</button>
       </div>
     </div>
   </div>
@@ -120,68 +122,91 @@
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-
+    <hr>
     <h2 class="titulo2">LO MAS COMPRADO</h2>
-    <div class="juntar"> <!-- CARDS AL LADO DE O-->
+    <div class="juntar"> <!-- CARDS AL LADO DE Otra-->
       <!-- CARD 1 -->
       <div class="card mr-3" style="width: 18rem;">
           <img src="img/1366_2000.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-              <p class="card-text">God of War</p>
+              <p class="card-text">God of War Ragnarok</p>
+              <hr>
               <p class="card-text">Puntuación: 9.7</p>
+          </div>
+           <!--Opcion comprar-->
+           <div class="option-shop">
+            <button type="button" class="btn btn-primary">Comprar</button>
           </div>
       </div>
   
       <!-- CARD 2 -->
       <div class="card" style="width: 18rem;">
-          <img src="img/1366_2000.jpeg" class="card-img-top" alt="...">
+          <img src="img/dmc.webp" class="card-img-top" alt="...">
           <div class="card-body">
-              <p class="card-text">God of War</p>
-              <p class="card-text">Puntuación: 9.7</p>
+              <p class="card-text">Devil May Cry 5</p>
+              <hr>
+              <p class="card-text">Puntuación: 9.3</p>
+          </div>
+           <!--Opcion comprar-->
+           <div class="option-shop">
+            <button type="button" class="btn btn-primary">Comprar</button>
           </div>
       </div>
       <!-- CARD 3-->
       
       <div class="card" style="width: 18rem;">
-          <img src="img/1366_2000.jpeg" class="card-img-top" alt="...">
+          <img src="img/images (1).jpg" class="card-img-top" alt="...">
           <div class="card-body">
-              <p class="card-text">God of War</p>
-              <p class="card-text">Puntuación: 9.7</p>
+              <p class="card-text">Bloodborne</p>
+              <hr>
+              <p class="card-text">Puntuación: 10.0</p>
+          </div>
+           <!--Opcion comprar-->
+           <div class="option-shop">
+            <button type="button" class="btn btn-primary">Comprar</button>
           </div>
       </div>
 
       <!-- CARD 4 -->
       <div class="card" style="width: 18rem;">
-        <img src="img/1366_2000.jpeg" class="card-img-top" alt="...">
+        <img src="img/spider-man-2-official-game.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-            <p class="card-text">God of War</p>
-            <p class="card-text">Puntuación: 9.7</p>
+            <p class="card-text">Spiderman 2</p>
+            <hr>
+            <p class="card-text">Puntuación: 8.7</p>
         </div>
-    </div>
+        <!--Opcion comprar-->
+            <div class="option-shop">
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+      </div>
     
   </div>
-  
-    
-    
-</body>
-<!-- CARRUSEL-->
-
-
 
 </body>
-</html>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <span class="navbar-text">
+        Contactenos: <a href="" > <b>juegos123@gmail.com</b></a>
+      </span>
+    </div>
+  </nav>
+</footer>
 </html>
