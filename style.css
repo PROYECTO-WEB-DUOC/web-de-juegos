@@ -36,3 +36,7 @@ body{
     margin-left: 5%;
     text-decoration:underline;
 }
+
+.modal-backdrop {
+    --bs-backdrop-zindex: none;
+}
