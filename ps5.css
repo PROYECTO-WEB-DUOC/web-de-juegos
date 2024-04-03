@@ -1,0 +1,59 @@
+body{
+    background-color: #5E5CC3;
+}
+.btn-primary {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#iniciar {
+    margin-top: 5px;
+}
+
+.btn{
+    color: white;
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+.modal-backdrop {
+    --bs-backdrop-zindex: none;
+}
+.modal-content{
+    background-color: #81E7D4;
+}
+.registrarse{
+    margin-bottom: 1px;
+}
+.juntar{
+    display: flex;
+    justify-content: center;
+}
+
+.card-text{
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+}
+.option-shop{
+    text-align: center;
+}
+
+.card{
+    
+    --bs-card-border-width: 0px;
+    -webkit-box-shadow: 6px 0px 26px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 6px 0px 26px 5px rgba(0,0,0,1);
+    box-shadow: 6px 0px 26px 5px rgba(0,0,0,1);
+    box-sizing: border-box;
+    border: 1px solid purple;
+    
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.titulo{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+}
