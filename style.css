@@ -3,12 +3,7 @@ body{
    background-color: #5E5CC3;
 }
 
-.titulo{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    text-align: center;
-    text-decoration:underline;
-}
+
 
 .imagen{
     height: 950px;
@@ -28,6 +23,7 @@ body{
 
 .juntar{
     display: flex;
+    
 }
 
 .titulo2{
@@ -60,7 +56,7 @@ body{
 }
 
 .option-shop{
-    text-align: center;
+    margin: auto;
 }
 
 hr{
@@ -83,3 +79,12 @@ hr{
     border-color: #0b5ed7;
 }
 
+.card{
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.detalles{
+    color: white;
+    text-decoration: none;
+}
