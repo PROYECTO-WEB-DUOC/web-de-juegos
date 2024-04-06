@@ -1,0 +1,157 @@
+body{
+    background-color: beige;
+}
+.btn-primary {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#iniciar {
+    margin-top: 5px;
+}
+
+.btn{
+    color: white;
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+.modal-backdrop {
+    --bs-backdrop-zindex: none;
+}
+.modal-content{
+    background-color: #81E7D4;
+}
+.registrarse{
+    margin-bottom: 1px;
+}
+.juntar{
+    display: flex;
+    justify-content: center;
+}
+
+.card-text{
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.option-shop{
+    text-align: center;
+}
+.card-img-top{
+   width: 30%;
+    padding: 10px;
+    
+}
+.card-img-top2{
+    width: 100%;
+    border: 0px solid black;
+    border-radius: 20px;
+}
+
+
+.card2{
+    --bs-card-border-width: 0px;
+    
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-bottom: 1%;
+   margin-top: 1%;
+    max-width: 100%;
+   max-height: 100%;
+   text-align: center;
+   text-decoration: underline;
+   background-color: white;
+   padding: 15px;
+
+}
+.card-body{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 1px solid ;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.caja-info{
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: content-box;
+    text-align:center;
+    padding: 10px;
+}
+#btn{
+    margin-top: 3%;
+}
+#dinero{
+    margin-top: 5px;
+}
+.card-info{
+    margin: auto;
+    margin-left: 30%;
+    --bs-card-border-width: 0px;
+    padding: 15px;  
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    max-width: 100%;
+   max-height: 100%;
+   text-align: center;
+   background-color: white;
+   
+   
+}
+#text-info{
+    padding-top: 10px;
+    margin-top: 10%;
+}
+.card-body{
+   background-color: white;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+    
+}
+footer{
+    margin-top: 11%;
+}
+video{
+    margin: auto;
+    width: 40rem;
+    margin-left: 80px;
+    box-sizing: border-box;
+    margin-top: 10px; 
+    box-shadow: 6px 0px 26px 5px rgba(0,0,0,1);
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+    
+    
+}
+summary{
+    border: 1px solid;
+    border-radius: 20px;
+    margin-top: 5px;
+margin-left: 14%;
+border: 1px solid black;
+box-sizing: border-box;
+width: 10%;
+background-color: #0b5ed7;
+color: white;
+height: 30px;
+text-align: center;
+}
+
+
+
+
