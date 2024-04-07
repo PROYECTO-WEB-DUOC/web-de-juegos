@@ -65,7 +65,18 @@ body{
 .titulo{
     text-align: center;
     margin-top: 5%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:monospace ;
     color: black;
     margin-bottom: 30px;
+}
+.bg-body-tertiary {
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+}
+
+#footer{
+    --bs-bg-opacity: 0;
 }

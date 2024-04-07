@@ -9,7 +9,10 @@ body{
 #iniciar {
     margin-top: 5px;
 }
-
+h1{
+    font-family: monospace;
+    
+}
 .btn{
     color: white;
     background-color: #0b5ed7;
@@ -18,9 +21,7 @@ body{
 .modal-backdrop {
     --bs-backdrop-zindex: none;
 }
-.modal-content{
-    background-color: #81E7D4;
-}
+
 .registrarse{
     margin-bottom: 1px;
 }
@@ -41,7 +42,7 @@ body{
 }
 .card-img-top{
    width: 30%;
-    padding: 10px;
+    
     
 }
 .card-img-top2{
@@ -63,7 +64,7 @@ body{
     max-width: 100%;
    max-height: 100%;
    text-align: center;
-   text-decoration: underline;
+   
    background-color: white;
    padding: 15px;
 
@@ -73,7 +74,7 @@ body{
     margin-top: 80px;
     margin-left: 80px;
     margin-right: 80px;
-    border: 1px solid ;
+    border: 3px solid #ddd;
     border-radius: 10px;
     box-sizing: border-box;
 }
@@ -84,6 +85,8 @@ body{
     box-sizing: content-box;
     text-align:center;
     padding: 10px;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 #btn{
     margin-top: 3%;
@@ -93,7 +96,7 @@ body{
 }
 .card-info{
     margin: auto;
-    margin-left: 30%;
+    
     --bs-card-border-width: 0px;
     padding: 15px;  
     box-sizing: border-box;
@@ -112,6 +115,8 @@ body{
 }
 .card-body{
    background-color: white;
+   margin-left: 100px;
+   margin-right: 100px;
 }
 
 .titulo{
@@ -127,7 +132,7 @@ footer{
 video{
     margin: auto;
     width: 40rem;
-    margin-left: 80px;
+    margin-left: 100px;
     box-sizing: border-box;
     margin-top: 10px; 
     box-shadow: 6px 0px 26px 5px rgba(0,0,0,1);
@@ -142,7 +147,7 @@ summary{
     border: 1px solid;
     border-radius: 20px;
     margin-top: 5px;
-margin-left: 14%;
+margin-left: 18%;
 border: 1px solid black;
 box-sizing: border-box;
 width: 10%;
@@ -153,5 +158,15 @@ text-align: center;
 }
 
 
+.bg-body-tertiary {
+    
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+#footer{
+    --bs-bg-opacity: 0;
+}
 
 

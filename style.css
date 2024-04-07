@@ -1,5 +1,5 @@
 body{
-    
+
    background-color:beige;
 }
 
@@ -18,10 +18,10 @@ body{
 }
 
 .titulo2{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:monospace;
     color: black;
     margin-left: 5%;
-    text-decoration:underline;
+    
     text-align: left;
 }
 
@@ -38,9 +38,7 @@ body{
     margin-top: 5px;
 }
 
-.modal-content{
-    background-color: #81E7D4;
-}
+
 
 .registrarse{
     margin-bottom: 1px;
@@ -102,14 +100,35 @@ hr{
 }
 
 .anti-body{
+    margin-top: 65px;
+    margin-left: 100px;
+    margin-right: 100px;
     box-shadow: 6px 0px 30px 5px rgb(16, 15, 15);
     background-color: black;
-    margin-top: 64px;
-    margin-bottom: 20px;
+    border: 0px solid ;
+
     
 }
-.navbar bg-body-tertiary{
+.bg-body-tertiary {
     
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
 }
 
 
+#footer{
+    --bs-bg-opacity: 0;
+}
+.line {
+    border-top: 2px solid;
+    margin: 20px 0px 0px 5px;
+    flex: 1 0 0;
+    color: black;
+    margin-right: 100px;
+}
+
+.linea{
+    display: flex;
+}

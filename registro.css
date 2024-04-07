@@ -1,3 +1,59 @@
 body{
-    background-color: aquamarine;
+    background-color:beige;
+}
+
+
+.form{
+    margin: auto;
+    margin-top: 8%;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: white ;
+    font-family: monospace;
+}
+
+.btn-success{
+    margin-top: 30px;
+    float: right;
+}
+
+#footer{
+    --bs-bg-opacity: 0;
+    
+}
+.bg-body-tertiary {
+    
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.btn-primary {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.btn{
+    color: white;
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+#iniciar{
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 140px;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.modal-backdrop {
+    --bs-backdrop-zindex: none;
 }
