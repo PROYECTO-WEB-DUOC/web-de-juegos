@@ -57,3 +57,33 @@ footer{
 .modal-backdrop {
     --bs-backdrop-zindex: none;
 }
+
+@media only screen and (max-width: 760px) {
+    .bg-body-tertiary{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .btn-primary{
+        margin-left: 0px;
+        
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        flex-wrap: nowrap;
+        
+        
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .form{
+        height: 500px;
+        width: 400px;
+        margin: auto;
+        margin-top: 100px;
+        
+    }
+  }

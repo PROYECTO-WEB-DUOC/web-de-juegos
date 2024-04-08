@@ -170,3 +170,55 @@ text-align: center;
 }
 
 
+@media only screen and (max-width: 760px) {
+    .bg-body-tertiary{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .btn-primary{
+        margin-left: 0px;
+        
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        flex-wrap: nowrap;
+        
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .card-body{
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .card2{
+        margin: auto;
+        width: 240px;
+        margin-bottom: 10px;
+        
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    summary{
+        margin: auto;
+        color: black;
+        
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    video{
+        width: 350px;
+        margin: auto;
+        margin-left:74px ;
+        
+    }
+}
