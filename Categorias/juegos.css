@@ -19,7 +19,7 @@ body{
     --bs-backdrop-zindex: none;
 }
 .modal-content{
-    background-color: #81E7D4;
+    background-color: white;
 }
 .registrarse{
     margin-bottom: 1px;
