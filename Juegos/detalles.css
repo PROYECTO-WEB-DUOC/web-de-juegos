@@ -1,5 +1,10 @@
 body{
-    background-color: beige;
+    background: rgb(120,149,149);
+background: -moz-linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
+background: linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#789595",endColorstr="#000000",GradientType=1);
+
 }
 .btn-primary {
     margin-left: 5px;
