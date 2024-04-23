@@ -1,9 +1,6 @@
 body{
-
-   background-color:beige;
-}
-
-
+    background: rgb(120,149,149);
+background: linear-gradient(0deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 78%);
 
 .imagen{
     height: 750px;
@@ -79,7 +76,7 @@ hr{
 }
 
 .card{
-    margin: auto;
+    margin-right: 20px;
     --bs-card-border-width: 0px;
     -webkit-box-shadow: 6px 0px 26px 5px rgba(0,0,0,1);
     -moz-box-shadow: 6px 0px 26px 5px rgba(0,0,0,1);
@@ -96,11 +93,11 @@ hr{
       -o-transition: 1.5s ease; /* Opera */
  }
  .card:hover{
-     transform : scale(1.2);
-     -moz-transform : scale(1.2); /* Firefox */
-     -webkit-transform : scale(1.2); /* Chrome - Safari */
-     -o-transform : scale(1.2); /* Opera */
-     -ms-transform : scale(1.2); /* IE9 */
+     transform : scale(1.21);
+     -moz-transform : scale(1.1); /* Firefox */
+     -webkit-transform : scale(1.1); /* Chrome - Safari */
+     -o-transform : scale(1.1); /* Opera */
+     -ms-transform : scale(1.1); /* IE9 */
  }
 
 
@@ -190,4 +187,4 @@ hr{
         
     }
   }
-  
+}
