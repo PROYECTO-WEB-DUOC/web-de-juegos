@@ -1,11 +1,6 @@
 body{
-    background: rgb(120,149,149);
-background: -moz-linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
-background: -webkit-linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
-background: linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#789595",endColorstr="#000000",GradientType=1);
-
-}
+    background: linear-gradient(rgb(40, 40, 40), rgb(56, 56, 56));;
+   }
 .btn-primary {
     margin-left: 5px;
     margin-bottom: 5px;
@@ -70,7 +65,7 @@ h1{
     max-width: 100%;
    max-height: 100%;
    text-align: center;
-   
+   margin-right: 5px;
    background-color: white;
    padding: 15px;
 
@@ -101,8 +96,8 @@ h1{
     margin-top: 5px;
 }
 .card-info{
-    margin: auto;
-    
+   
+    margin: auto ;
     --bs-card-border-width: 0px;
     padding: 15px;  
     box-sizing: border-box;
@@ -164,11 +159,7 @@ text-align: center;
 }
 
 
-.bg-body-tertiary {
-    
-    margin-left: 100px;
-    margin-right: 100px;
-}
+
 
 
 #footer{
@@ -176,12 +167,7 @@ text-align: center;
 }
 
 
-@media only screen and (max-width: 760px) {
-    .bg-body-tertiary{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-  }
+
   @media only screen and (max-width: 760px) {
     .btn-primary{
         margin-left: 0px;
@@ -199,7 +185,7 @@ text-align: center;
         display: block;
         margin: auto;
         margin-top: 100px;
-        width: 350px;
+       
     }
 }
 
@@ -222,9 +208,10 @@ text-align: center;
 
 @media only screen and (max-width: 760px) {
     video{
-        width: 350px;
+        
+        width: 100%;
         margin: auto;
-        margin-left:74px ;
+        
         
     }
 }

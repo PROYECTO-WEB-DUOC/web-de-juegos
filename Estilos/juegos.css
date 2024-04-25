@@ -1,10 +1,6 @@
 body{
-  background: rgb(120,149,149);
-  background: -moz-linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
-  background: linear-gradient(45deg, rgba(120,149,149,1) 0%, rgba(0,0,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#789595",endColorstr="#000000",GradientType=1);
-  }
+  background: linear-gradient(rgb(40, 40, 40), rgb(56, 56, 56));;
+ }
 .btn-primary {
     margin-left: 5px;
     margin-bottom: 5px;
@@ -74,24 +70,13 @@ body{
     color: black;
     margin-bottom: 30px;
 }
-.bg-body-tertiary {
-    
-    margin-left: 100px;
-    margin-right: 100px;
-    border: 0px solid #ddd;
-    border-radius: 5px;
-}
+
 
 #footer{
     --bs-bg-opacity: 0;
 }
 
-@media only screen and (max-width: 760px) {
-    .bg-body-tertiary{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-  }
+
   @media only screen and (max-width: 760px) {
     .btn-primary{
         margin-left: 0px;
