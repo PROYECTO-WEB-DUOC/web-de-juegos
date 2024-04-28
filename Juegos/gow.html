@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="/carrito.js"></script>
     <link rel="icon" href="img/icono.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -90,26 +91,72 @@
     </div>
     <div class="card-info" style="width: 30rem; height: 25rem;">
       <!--botones radio-->
-        <H5>Medios de Pagos</H5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">
-            <img src="/img/paypal_logo_icon_170865.png" alt="" class="card-img-top" id="paypal">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-          <label class="form-check-label" for="flexRadioDefault2">
-            <img src="/img/Logo_BancoEstado.svg.png" alt="" class="card-img-top">
-          </label>
-        </div>
+       
 
 
         <div class="caja-info">
           <h6>Te pediremos tus datos luego que decidas comprar el juego</h6>
         </div>
         <h3 id="dinero"> $10.900 CLP</h3>
-        <button class="btn" id="btn">Agregar al carrito </button>
+            <!-- Button trigger modal -->
+              <button type="button" id="preciogow" onclick="agregarProducto('God of War', 30900)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Agregar al Carrito
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog2">
+                  <div class="modal-content modal-content2">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Compra</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body modal-body2" id="">
+                      <div class="subtotal">
+                        <p>Subtotal</p> <input type="number" name="" id="subtotal">
+                      </div>
+                      <p>Impuestos</p>
+                      <p>Total</p>
+                      <H5>Medios de Pagos</H5>
+                      <div class="metodo">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            <img src="/img/paypal_logo_icon_170865.png" alt="" class="card-img-top" id="paypal">
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            <img src="/img/Logo_BancoEstado.svg.png" alt="" class="card-img-top">
+                          </label>
+                        </div>
+                      </div>
+                      <h5>Resumen</h5>
+                      <div class="Resumen">
+                        <div class="card mb-3" style="max-width: 540px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="/img/1366_2000.jpeg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body2">
+                                <h5 class="card-title">God of War Ragnarok</h5>
+                                <p class="card-text" >$10.900 CLP</p>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer modal-footer2">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
     </div>          
   </div>
  <!--trailer-->

@@ -121,3 +121,15 @@ body{
     height: 40px;
     color: black
   }
+
+  .nav-item:hover{
+    background-color:#ebeef0;
+    
+    border-radius: 32px;
+    transition: .25s;
+  
+  }
+  
+  .nav-item:active{
+    border: 1px solid black;
+  }

@@ -36,3 +36,26 @@ document.addEventListener('DOMContentLoaded', () => {
     
     setInterval(updateCountdown,1000);
 });
+
+//carrit
+
+
+function sumar1(){
+    var preciogow=30900
+    var preciospiderman=40900
+    var preciobloodborne=15900
+    var preciodmc=22900
+
+    
+    document.getElementById('subtotal').value=document.getElementById('subtotal').value+preciogow;
+    
+}
+function sumar2(){
+    var preciogow=30900
+    var preciospiderman=40900
+    var preciobloodborne=15900
+    var preciodmc=22900
+
+    document.getElementById('subtotal').value=document.getElementById('subtotal').value+preciospiderman;
+    
+}

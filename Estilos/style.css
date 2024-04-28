@@ -51,7 +51,7 @@ hr{
 
 .card-text{
     font-style: italic;
-    text-decoration: underline;
+   
     text-align: center;
 }
 
@@ -90,12 +90,14 @@ hr{
      -webkit-transform : scale(1.1); /* Chrome - Safari */
      -o-transform : scale(1.1); /* Opera */
      -ms-transform : scale(1.1); /* IE9 */
+     
  }
 
 
 .detalles{
     color: white;
     text-decoration: none;
+  font-style: italic;   
 }
 
 
@@ -170,33 +172,7 @@ hr{
     height: 40px;
     color: #fff
   }
-  .carousel-inner{
-
-   border: 1px solid ;
-   border-radius: 20px;
-    width: 70%;
-   margin: auto;
-   height: auto;
-   max-width: 100%;
-   
-  }
   
-  .carousel {
-    
-    margin-top: 64px;
-    
-    
-    
-    
-    
-}
-
-@media only screen and (max-width:992px){
-  .carousel{
-    margin-top: 56px;
-  }
-}
-
 
 
 .contenedor1{
@@ -219,9 +195,66 @@ hr{
 
 
 .contador{
-  background-color: #fff;
+ 
+ 
+ 
+ margin: auto;
   text-align: center;
   width: 100%;
-  margin: auto;
   font-size: 30px;
+ color: #fff;
+ 
+}
+
+video{
+  width: 100%;
+  opacity: 0.3;
+}
+
+
+
+.video {
+  position: relative;
+  margin-top: 55px;
+}
+
+.boton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   
+}
+
+.imagen{
+  
+  width: 40%;
+  border: 0px solid black;
+  border-radius: 15px;
+  
+}
+
+
+
+.carousel-item{
+  text-align: center;
+}
+
+.carousel-control-next, .carousel-control-prev {
+
+  width: 55%;
+  
+}
+
+
+.nav-item:hover{
+  background-color:#ebeef0;
+  
+  border-radius: 32px;
+  transition: .25s;
+
+}
+
+.nav-item:active{
+  border: 1px solid black;
 }
