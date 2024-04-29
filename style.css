@@ -265,3 +265,12 @@ hr{
 .registro-form input[type="submit"]:hover {
     background-color: #06650e;
 }
+
+
+.errores{
+    background-color: red;
+    color: white;
+    display:none ;
+    position: absolute;
+    
+}

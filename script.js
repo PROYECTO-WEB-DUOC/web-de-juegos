@@ -1,34 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-    const DATE_TARGET = new Date('06/13/2024 0:01 AM');
+    const fecha_juego = new Date('06/13/2024 0:01 AM');
 
-    const DAYS = document.querySelector('#days');
-    const HOURS = document.querySelector('#hours');
-    const MINUTES = document.querySelector('#minutes');
-    const SECONDS = document.querySelector('#seconds');
+    const dias = document.querySelector('#days');
+    const horas = document.querySelector('#hours');
+    const minutos = document.querySelector('#minutes');
+    const segundos = document.querySelector('#seconds');
     
-    const MILLISECONDS_OF_A_SECOND = 1000;
-    const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
-    const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
-    const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+    const milisegundos_segundo = 1000;
+    const milisegundos_minuto = milisegundos_segundo * 60;
+    const milisegundos_hora= milisegundos_minuto * 60;
+    const milisegundos_dias = milisegundos_hora* 24
 
     
 
     
     function updateCountdown() {
         
-        const NOW = new Date()
-        const DURATION = DATE_TARGET - NOW;
-        const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
-        const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
-        const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
-        const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+        const now = new Date()
+        const duracion = fecha_juego - now;
+        const dias_restantes = Math.floor(duracion / milisegundos_dias);
+        const horas_restantes = Math.floor((duracion % milisegundos_dias) / milisegundos_hora);
+        const minutos_restantes = Math.floor((duracion % milisegundos_hora) / milisegundos_minuto);
+        const segundos_restantes = Math.floor((duracion % milisegundos_minuto) / milisegundos_segundo);
         
-        DAYS.textContent = REMAINING_DAYS;
-        HOURS.textContent = REMAINING_HOURS;
-        MINUTES.textContent = REMAINING_MINUTES;
-        SECONDS.textContent = REMAINING_SECONDS;
+        dias.textContent = dias_restantes;
+        horas.textContent = horas_restantes;
+        minutos.textContent =  minutos_restantes;
+        segundos.textContent = segundos_restantes;
     }
 
    
@@ -40,22 +40,3 @@ document.addEventListener('DOMContentLoaded', () => {
 //carrit
 
 
-function sumar1(){
-    var preciogow=30900
-    var preciospiderman=40900
-    var preciobloodborne=15900
-    var preciodmc=22900
-
-    
-    document.getElementById('subtotal').value=document.getElementById('subtotal').value+preciogow;
-    
-}
-function sumar2(){
-    var preciogow=30900
-    var preciospiderman=40900
-    var preciobloodborne=15900
-    var preciodmc=22900
-
-    document.getElementById('subtotal').value=document.getElementById('subtotal').value+preciospiderman;
-    
-}
