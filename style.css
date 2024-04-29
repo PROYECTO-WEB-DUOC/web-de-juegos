@@ -270,7 +270,7 @@ hr{
 .errores{
     background-color: red;
     color: white;
-    display:none ;
+    
     position: absolute;
     
 }
