@@ -1,17 +1,41 @@
 
+function generadorcontraseña() {
+        const abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("");
+        var resultado = '';
+        for (var letras = 1; letras <= 8; letras++) {
+            var random = Math.floor(Math.random() * abc.length);
+            resultado += abc[random];
+        }
+    
+        document.getElementById('contraseña').value = resultado;
+        document.getElementById('confirmar_contraseña').value = resultado;
+    }
+ 
 
-var contraseña=document.getElementById('contraseña')
-var contraseña2=document.getElementById('confirmar_contraseña')
 
-function generadorcontraseña(){
-const abc = "a b c d e f g h i j k l m n o p q r s t u v w x y z".split(" ");
-var resultado='';
-for(var letras=1;letras<=8;letras++){
-        var random=Math.floor(Math.random()*abc.length)
-        resultado+=abc[random]      
+
+function mostrarcontraseña(){
+  var mostrar = document.getElementById('contraseña');
+        
+        mostrar.setAttribute('type','text')
+        var contraseña=document.getElementById('mostrar_contraseña')
+        contraseña.style.display='none';
+        var ocultar=document.getElementById('ocultar_contraseña')
+        ocultar.style.display='';
+   
+     
 }
-
-contraseña.textContent=resultado;
-contraseña2.textContent=resultado;
+function ocultarcontraseña(){
+        var mostrar = document.getElementById('contraseña');
+        
+        mostrar.setAttribute('type','password')
+        
+        var ocultar=document.getElementById('ocultar_contraseña')
+        ocultar.style.display='none';
+        var contraseña=document.getElementById('mostrar_contraseña')
+        contraseña.style.display='';
+        
 }
+       
 
+    

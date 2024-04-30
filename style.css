@@ -121,13 +121,6 @@ hr{
 
     
 }
-.bg-body-tertiary {
-    
-    margin-left: 100px;
-    margin-right: 100px;
-    border: 0px solid #ddd;
-    border-radius: 5px;
-}
 
 
 #footer{
@@ -213,16 +206,16 @@ hr{
 
   }
   /*registrarse*/
-  body {
-    background-color: #f8f9fa;
-}
+
 
 .container {
-    margin-top: 50px;
+    margin: auto ;
+    margin-top: 80px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
 }
 
 .cuadrado {
@@ -270,7 +263,7 @@ hr{
 .errores{
     background-color: red;
     color: white;
-    
+    display: none;
     position: absolute;
     
 }
