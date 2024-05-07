@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/Estilos/juegos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="/api.js"></script>
     <title>Web de juegos</title>
 </head>
 <body>
@@ -16,34 +18,62 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <a class="navbar-brand" href="#">
+            <img src="/img/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Web de Juegos
+          </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-
+                <a class="nav-link active" aria-current="page" href="/index.html" >Inicio
                 </a>            
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" style="color: black;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Juegos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Categorias/ps5.html">PS5</a></li>
-                  <li><a class="dropdown-item" href="/Categorias/ps4.html">PS4</a></li>
-                  <li><a class="dropdown-item" href="pc.html">PC</a></li>
+                  <li><a class="dropdown-item" href="Categorias/ps5.html">PS5</a></li>
+                  <li><a class="dropdown-item" href="Categorias/ps4.html">PS4</a></li>
+                  <li><a class="dropdown-item" href="Categorias/pc.html">PC</a></li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="" >Servicios
+                </a>            
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="" >Noticias
+                </a>            
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="" >Accesorios
+                </a>            
+              </li>
+            
               
             </ul>
             
             <form class="d-flex" role="search">
               
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <input class="form-control me-2" type="search" id="texto" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
               
-            </form>   
+            </form>  
+            <!--resultados busqueda -->
+            <div class="modal fade" id="resultadosModal" tabindex="-1" aria-labelledby="resultadosModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="resultadosModalLabel">Resultados de la búsqueda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="resultados"></div>
+                </div>
+              </div>
+            </div>       
 <!-- modal-->
 <button type="button" class="btn btn-outline-success" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</button>
 
@@ -66,11 +96,11 @@
             <input type="password" class="form-control" placeholder="Contraseña" ></input>
           </div>
         </form>
-        <p class="registrarse">¿No tienes una cuenta? <a href="/Registros/crearc.html">Registrate</a></p>
+        <p class="registrar">¿No tienes una cuenta? <a href="/Registros/crearc.html">Registrate</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" >Iniciar Sesion</button>
+        <button type="button" class="btn btn-primary " >Iniciar Sesion</button>
       </div>
     </div>
   </div>
@@ -79,6 +109,7 @@
 </div>
 </div>
 </nav>
+
 <H1 class="titulo">JUEGOS PC</H1>
 <div class="juntar"> <!-- CARDS AL LADO DE Otra-->
     <!-- CARD 1 -->

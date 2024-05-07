@@ -7,79 +7,109 @@
     <link rel="stylesheet" href="/Estilos/registro.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="/api.js"></script>
     <title>Web de juegos</title>
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/img/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Web de Juegos
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 mb-lg-0">
 
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html" >Inicio
-                </a>            
-              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html" >Inicio
+              </a>            
+            </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Juegos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Categorias/ps5.html">PS5</a></li>
-                  <li><a class="dropdown-item" href="/Categorias/ps4.html">PS4</a></li>
-                  <li><a class="dropdown-item" href="/Categorias/pc.html">PC</a></li>
-                </ul>
-              </li>
-              
-            </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" style="color: black;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Juegos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Categorias/ps5.html">PS5</a></li>
+                <li><a class="dropdown-item" href="Categorias/ps4.html">PS4</a></li>
+                <li><a class="dropdown-item" href="Categorias/pc.html">PC</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="" >Servicios
+              </a>            
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="" >Noticias
+              </a>            
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="" >Accesorios
+              </a>            
+            </li>
+          
             
-            <form class="d-flex" role="search">
-              
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-              
-            </form>   
+          </ul>
+          
+          <form class="d-flex" role="search">
+            
+            <input class="form-control me-2" type="search" id="texto" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
+            
+          </form>  
+          <!--resultados busqueda -->
+          <div class="modal fade" id="resultadosModal" tabindex="-1" aria-labelledby="resultadosModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="resultadosModalLabel">Resultados de la búsqueda</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="resultados"></div>
+              </div>
+            </div>
+          </div>       
 <!-- modal-->
 <button type="button" class="btn btn-outline-success" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</button>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal-dialog">
 
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
-        <input type="text">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label" >Correo</label>
-            <input type="email" class="form-control" placeholder="Correo" >
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Contraseña</label>
-            <input type="password" class="form-control" placeholder="Contraseña" ></input>
-          </div>
-        </form>
-        <p class="registrarse">¿No tienes una cuenta? <a href="crearc.html">Regístrate</a></p>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" >Iniciar Sesion</button>
-      </div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <label for="recipient-name" class="col-form-label" >Correo</label>
+          <input type="email" class="form-control" placeholder="Correo" >
+        </div>
+        <div class="mb-3">
+          <label for="message-text" class="col-form-label">Contraseña</label>
+          <input type="password" class="form-control" placeholder="Contraseña" ></input>
+        </div>
+      </form>
+      <p class="registrar">¿No tienes una cuenta? <a href="/Registros/crearc.html">Registrate</a></p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary " >Iniciar Sesion</button>
     </div>
   </div>
 </div>
-            
+</div>
+          
 </div>
 </div>
 </nav>
+
 <script>type="text/javascript"</script>
     <div class="form">
         <div class="titulo">

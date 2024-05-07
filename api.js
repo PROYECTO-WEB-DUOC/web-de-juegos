@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     btnbuscar.addEventListener('click', async (e) => {
         e.preventDefault();
         const busqueda = texto.value;
-        const url = `https://steam-api7.p.rapidapi.com/search?query=${busqueda}&limit=5`;
+        const url = `https://steam-api7.p.rapidapi.com/search?query=${busqueda}&limit=10`;
         const options = {
             method: 'GET',
             headers: {
