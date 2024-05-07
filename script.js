@@ -37,6 +37,3 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(updateCountdown,1000);
 });
 
-//carrit
-
-

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="script.js"></script>
     <link rel="icon" href="img/icono.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="Estilos/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="api.js"></script>
     <title>Web de Juegos</title>
 </head>
 <body>
@@ -27,7 +29,7 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Juegos
                 </a>
                 <ul class="dropdown-menu">
@@ -36,15 +38,28 @@
                   <li><a class="dropdown-item" href="Categorias/pc.html">PC</a></li>
                 </ul>
               </li>
+            
               
             </ul>
             
             <form class="d-flex" role="search">
               
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <input class="form-control me-2" type="search" id="texto" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
               
-            </form>   
+            </form>  
+            <!--resultados busqueda -->
+            <div class="modal fade" id="resultadosModal" tabindex="-1" aria-labelledby="resultadosModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="resultadosModalLabel">Resultados de la búsqueda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="resultados"></div>
+                </div>
+              </div>
+            </div>       
 <!-- modal-->
 <button type="button" class="btn btn-outline-success" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</button>
 
@@ -111,6 +126,7 @@
           </div>
         </div>
       </div>
+      
 <!-- CARDS-->
     <section>
       <div class="linea">
@@ -254,4 +270,5 @@
     </div>
   </nav>
 </footer>
+
 </html>
