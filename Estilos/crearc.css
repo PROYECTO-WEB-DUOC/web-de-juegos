@@ -43,9 +43,6 @@ filter: progid:DXImageTransfpushorm.Microsoft.gradient(startColorstr="#789595",e
     margin-bottom: 5px;
 }
 
-#iniciar{
-    margin-top: 5px;
-}
 
 
 
@@ -267,3 +264,30 @@ hr{
     position: absolute;
     
 }
+
+
+.navbar-text{
+    color: #fff;
+    text-decoration-line: none;
+  }
+  b{
+    color: #fff;
+    
+  }
+  @media only screen and (max-width: 990px) {
+  #iniciar{
+    margin-left: 0;
+    margin-top: 5px;
+  }}
+  
+  .btn-primary{
+    margin-bottom: 5px;
+  }
+  
+  #formulario{
+  color: #fff;
+  text-decoration-line: none;
+  }
+  .btn-outline-success {
+    margin-left:2px ;
+  }
