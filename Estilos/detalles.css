@@ -1,14 +1,20 @@
 body{
-    background: linear-gradient(rgb(40, 40, 40), rgb(56, 56, 56));;
+   margin: 0;
+  background: linear-gradient(rgb(40, 40, 40), rgb(56, 56, 56));;
    }
 .btn-primary {
     margin-left: 5px;
     margin-bottom: 5px;
 }
 
-
-h1{
+.imagen{
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+}
+.card-header{
     font-family: monospace;
+    color: #fff;
     
 }
 .btn{
@@ -16,18 +22,73 @@ h1{
     background-color: #0b5ed7;
     border-color: #0b5ed7;
 }
-.modal-backdrop {
-    --bs-backdrop-zindex: none;
+
+.card{
+    background-color: rgba(31, 32, 36, .97) !important;
+    position:relative;
+    max-width: 600px;
+    bottom: 250px;
+    margin-left: 50px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+.btn-primary-2{
+
+  width: 80%;
+  border-radius: 20px;
+  margin: auto;
+
+}
+.container-card{
+  display: flex;
+  
+}
+.card-body-1{
+  display: flex;
+  margin-left: 10px;
+  
+}
+.container-info{
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  
 }
 
-.registrarse{
-    margin-bottom: 1px;
+
+p{
+  font-size: 10px;
 }
-.juntar{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  
+h1{
+  min-width: 7%;
 }
+.card-title{
+  border: 1px solid #fff;
+  min-width:25%;
+  
+ 
+  margin-left: 5px;
+  box-sizing: content-box;
+  text-align: center;
+}
+.container{
+  margin: 0;
+  min-width: 100%;
+  padding: 0;
+ box-sizing: content-box;
+ 
+}
+.img-fluid{
+  min-width: 100%;
+  margin-top: 58px;
+  height: 600px;
+}
+
 
 .card-text{
     font-style: italic;
@@ -36,103 +97,20 @@ h1{
     padding: 10px;
     box-sizing: border-box;
 }
-.option-shop{
-    text-align: center;
-}
+
 .card-img-top{
    width: 30%;
-    
-    
-}
-.card-img-top2{
-    width: 100%;
-    border: 0px solid black;
-    border-radius: 20px;
 }
 
 
-.card2{
-    --bs-card-border-width: 0px;
-    
-    box-sizing: border-box;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    margin-left: 2%;
-    margin-bottom: 1%;
-   margin-top: 1%;
-    max-width: 100%;
-   max-height: 100%;
-   text-align: center;
-   margin-right: 5px;
-   background-color: white;
-   padding: 15px;
-
-}
-.card-body{
-    display: flex;
-    margin-top: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    border: 3px solid #ddd;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-.caja-info{
-    
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: content-box;
-    text-align:center;
-    padding: 10px;
-    margin-top:30px;
-    margin-bottom: 30px;
-}
-#btn{
-    margin-top: 3%;
-}
-#dinero{
-    margin-top: 5px;
-}
-.card-info{
-   
-    margin: auto ;
-    --bs-card-border-width: 0px;
-    padding: 15px;  
-    box-sizing: border-box;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    max-width: 100%;
-   max-height: 100%;
-   text-align: center;
-   background-color: white;
-   
-   
-}
-#text-info{
-    padding-top: 10px;
-    margin-top: 10%;
-}
-.card-body{
-   background-color: white;
-   margin-left: 100px;
-   margin-right: 100px;
-}
-
-.titulo{
-    text-align: center;
-    margin-top: 5%;
-    font-family: 'Times New Roman', Times, serif;
-    color: azure;
-    
-}
 footer{
     margin-top: 11%;
 }
 video{
-    margin: auto;
-    width: 40rem;
-    margin-left: 100px;
-    box-sizing: border-box;
+    
+    width: 70rem;
+   
+    box-sizing: content-box;
     margin-top: 10px; 
     box-shadow: 6px 0px 26px 5px rgba(0,0,0,1);
     box-sizing: border-box;
@@ -140,19 +118,29 @@ video{
     border-radius: 20px;
     
     
-    
+}
+.video{
+  text-align: center;
+}
+
+.navbar-nav{
+ 
+  font-size: 20px;
+  font-weight: 500; 
+  
 }
 summary{
     border: 1px solid;
     border-radius: 20px;
     margin-top: 5px;
-margin-left: 18%;
+margin: auto;
 border: 1px solid black;
 box-sizing: border-box;
-width: 10%;
+width: 20%;
 background-color: #0b5ed7;
 color: white;
 height: 30px;
+
 text-align: center;
 }
 
@@ -162,10 +150,30 @@ text-align: center;
 
 #footer{
     --bs-bg-opacity: 0;
+    color: #fff;
 }
 
+@media only screen and (max-width: 760px) {
+  .container-card{
+     display: block;
+      
+  }
+}
+@media only screen and (max-width: 760px) {
+  .img-fluid{
+     height: auto;
+      
+  }
+}
 
-
+@media only screen and (max-width: 760px) {
+  .card{
+    max-width: calc(100vw - 42px );
+      margin: auto;
+     bottom: 50px;
+      
+  }
+}
   @media only screen and (max-width: 760px) {
     .btn-primary{
         margin-left: 0px;
@@ -178,14 +186,7 @@ text-align: center;
         
     }
   }
-  @media only screen and (max-width: 760px) {
-    .card-body{
-        display: block;
-        margin: auto;
-        margin-top: 100px;
-       
-    }
-}
+  
 
 @media only screen and (max-width: 760px) {
     .card2{
@@ -214,6 +215,7 @@ text-align: center;
     }
 }
 
+
 html {
     min-height: 100%;
     position: relative;
@@ -227,7 +229,7 @@ html {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 10px;
     color: black
   }
 
@@ -239,9 +241,7 @@ html {
   
   }
   
-  .nav-item:active{
-    border: 1px solid black;
-  }
+  
 
 .modal-dialog2{
     margin-right:0;
@@ -293,7 +293,7 @@ border-radius: 10px;
 .subtotal{
     display: flex;
 }
-input{
+.form-check-input-1{
     margin-left: 50px;
    
 }
@@ -324,9 +324,10 @@ input{
   .btn-outline-success {
     margin-left:2px ;
   }
-  .navbar-nav{
  
-  
-    margin: auto;
-    
-   }
+  .modal-backdrop.show {
+    opacity:0;
+}
+.modal-backdrop {
+  --bs-backdrop-zindex: 0;
+}

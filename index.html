@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="miapi.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="script.js"></script>
     <link rel="icon" href="img/icono.png">
@@ -23,10 +24,10 @@
           </button>
           <a class="navbar-brand" href="#">
             <img src="/img/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Web de Juegos
+            
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html" >Inicio
@@ -55,7 +56,9 @@
                 <a class="nav-link active" aria-current="page" href="" >Accesorios
                 </a>            
               </li>
-            
+              <li class="nav-item">
+                <a class="nav-link active" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</a>
+              </li>
               
             </ul>
             
@@ -63,7 +66,7 @@
               
               <input class="form-control me-2" type="search" id="texto" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
-              
+             
             </form>  
             <!--resultados busqueda -->
             <div class="modal fade" id="resultadosModal" tabindex="-1" aria-labelledby="resultadosModalLabel" aria-hidden="true">
@@ -78,7 +81,7 @@
               </div>
             </div>       
 <!-- modal-->
-<button type="button" class="btn btn-outline-success" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</button>
+
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">

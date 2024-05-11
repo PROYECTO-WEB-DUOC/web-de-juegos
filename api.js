@@ -40,8 +40,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         $('#resultadosModal').modal('show');
     }
 
-   
-
+    let btninfo=document.getElementById('boton-info')
+   //mi api
+ 
     
     
 });

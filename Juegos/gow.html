@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="/carrito.js"></script>
+    <script src="api.js"></script>
     <link rel="icon" href="img/icono.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -21,10 +21,10 @@
         </button>
         <a class="navbar-brand" href="#">
           <img src="/img/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          Web de Juegos
+          
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/index.html" >Inicio
@@ -36,9 +36,9 @@
                 Juegos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="Categorias/ps5.html">PS5</a></li>
-                <li><a class="dropdown-item" href="Categorias/ps4.html">PS4</a></li>
-                <li><a class="dropdown-item" href="Categorias/pc.html">PC</a></li>
+                <li><a class="dropdown-item" href="/Categorias/ps5.html">PS5</a></li>
+                <li><a class="dropdown-item" href="/Categorias/ps4.html">PS4</a></li>
+                <li><a class="dropdown-item" href="/Categorias/pc.html">PC</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -53,7 +53,9 @@
               <a class="nav-link active" aria-current="page" href="" >Accesorios
               </a>            
             </li>
-          
+            <li class="nav-item">
+              <a class="nav-link active" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</a>
+            </li>
             
           </ul>
           
@@ -61,7 +63,7 @@
             
             <input class="form-control me-2" type="search" id="texto" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
-            
+           
           </form>  
           <!--resultados busqueda -->
           <div class="modal fade" id="resultadosModal" tabindex="-1" aria-labelledby="resultadosModalLabel" aria-hidden="true">
@@ -74,9 +76,9 @@
                 <div class="modal-body" id="resultados"></div>
               </div>
             </div>
-          </div>       
+          </div>   
 <!-- modal-->
-<button type="button" class="btn btn-outline-success" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</button>
+
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
@@ -113,28 +115,45 @@
 
 <!--TITULO-->
 
-<!--card-->
-<div class="card-body">
+<div class="container" >
+  <img class="img-fluid" src="/img/gow carrito.png" alt="" >
+</div>
+<div class="container-card">
+<div class="card text-bg-dark mb-3" style=>
+  <div class="card-header" ><h1>God Of War Ragnarok</h1></div>
+  <div class="card-body-1">
+    <h6 class="card-title-2" style=" margin-left: 5px; border: 1px solid #fff; min-width: 7%; height: 30px;padding: 3px;" > PS5 </h6> <h6 class="card-title" > Edicion Estandar</h6>
+  </div>
+  <div class="card-body">
+    <p class="card-text-1">
+      4.82 <img src="/img/estrella.png" width="40px" style="margin-bottom: 5px;" alt=""> 
+      <img src="/img/estrella.png" width="40px" style="margin-bottom: 5px;" alt="">
+      <img src="/img/estrella.png" width="40px" style="margin-bottom: 5px;" alt="">
+      <img src="/img/estrella.png" width="40px" style="margin-bottom: 5px;" alt="">
+      <img src="/img/estrella.png" width="40px" style="margin-bottom: 5px;" alt=""> 100 mil Calificaciones
+    </p>
+    <br>
+    <br>
+    <h3 >CLP 54.990$</h3>
+    
+    <button type="button" id="preciogow"  class="btn btn-primary-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Agregar al Carrito
+    </button>
+   
+  </div>
+</div>
+<!--info juego-->
+
+  <div class="container-info">
+  <p> <img src="/img/mandopng.png" width="40px" style="margin-right: 5px;" alt="">Juego Offline Activado</p>
+  <p> <img src="/img/user_icon_149851.png" width="40px"  alt="">1 Jugador</p>
+  <p> <img src="/img/mATURE 17.jpg" width="40px" alt=""> Derramiento de Sangre</p>
   
-  <div class="card2" style="width: 40rem;">
-      <h1>GOD OF WAR RAGNAROK - PS5</h1>
-      
-      <img src="/img/1366_2000.jpeg" class="card-img-top2" alt="..." >
-        <p class="card-text">Desde Santa Monica Studio llega la secuela del aclamado por la crítica God of War (2018). Fimbulvetr ya está en camino. Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo. En el camino explorarán paisajes increíbles y míticos, y se enfrentarán a aterradores enemigos en la forma de dioses nórdicos y monstruos. La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos.</p>
-    </div>
-    <div class="card-info" style="width: 30rem; height: 25rem;">
-      <!--botones radio-->
-       
-
-
-        <div class="caja-info">
-          <h6>Te pediremos tus datos luego que decidas comprar el juego</h6>
-        </div>
-        <h3 id="dinero"> $10.900 CLP</h3>
-            <!-- Button trigger modal -->
-              <button type="button" id="preciogow" onclick="agregarProducto('God of War', 30900)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Agregar al Carrito
-              </button>
+   
+  
+  </div>  
+     
+</div>  
 
               <!-- Modal -->
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -153,13 +172,13 @@
                       <H5>Medios de Pagos</H5>
                       <div class="metodo">
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <input class="form-check-input-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                           <label class="form-check-label" for="flexRadioDefault1">
                             <img src="/img/paypal_logo_icon_170865.png" alt="" class="card-img-top" id="paypal">
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <input class="form-check-input-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                           <label class="form-check-label" for="flexRadioDefault2">
                             <img src="/img/Logo_BancoEstado.svg.png" alt="" class="card-img-top">
                           </label>
@@ -190,12 +209,13 @@
                   </div>
                 </div>
               </div>
-    </div>          
-  </div>
+ 
  <!--trailer-->
     <details>
         <summary>TRAILER</summary>
+        <div class="video">
          <video controls autoplay muted src="/videos/God of War Ragnarök _ Tráiler de la historia _ PS5, PS4.mp4">  </video>
+        </div>
     </details>
     
     

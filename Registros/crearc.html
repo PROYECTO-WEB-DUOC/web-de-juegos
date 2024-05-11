@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <script src="generador.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -12,22 +12,22 @@
     <title>Web de Juegos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/Estilos/crearc.css  ">
-    
+    <script src="generador.js"></script>
 </head>
 <body> 
-   <div class="conteinerr"></div>
+  
     
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">
         <img src="/img/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        Web de Juegos
+        
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav  mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/index.html" >Inicio
@@ -39,9 +39,9 @@
               Juegos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Categorias/ps5.html">PS5</a></li>
-              <li><a class="dropdown-item" href="Categorias/ps4.html">PS4</a></li>
-              <li><a class="dropdown-item" href="Categorias/pc.html">PC</a></li>
+              <li><a class="dropdown-item" href="/Categorias/ps5.html">PS5</a></li>
+              <li><a class="dropdown-item" href="/Categorias/ps4.html">PS4</a></li>
+              <li><a class="dropdown-item" href="/Categorias/pc.html">PC</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -56,7 +56,9 @@
             <a class="nav-link active" aria-current="page" href="" >Accesorios
             </a>            
           </li>
-        
+          <li class="nav-item">
+            <a class="nav-link active" id="iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesion</a>
+          </li>
           
         </ul>
         
@@ -64,7 +66,7 @@
           
           <input class="form-control me-2" type="search" id="texto" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
-          
+         
         </form>  
         <!--resultados busqueda -->
         <div class="modal fade" id="resultadosModal" tabindex="-1" aria-labelledby="resultadosModalLabel" aria-hidden="true">
@@ -80,6 +82,32 @@
         </div>       
 <!-- modal-->
 
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+
+<div class="modal-content">
+  <div class="modal-header">
+    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="recipient-name" class="col-form-label" >Correo</label>
+        <input type="email" class="form-control" placeholder="Correo" >
+      </div>
+      <div class="mb-3">
+        <label for="message-text" class="col-form-label">Contraseña</label>
+        <input type="password" class="form-control" placeholder="Contraseña" ></input>
+      </div>
+    </form>
+    <p class="registrar">¿No tienes una cuenta? <a href="/Registros/crearc.html">Registrate</a></p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    <button type="button" class="btn btn-primary " >Iniciar Sesion</button>
+  </div>
 </div>
 </div>
 </div>
@@ -103,9 +131,9 @@
             <input type="email" id="correo" name="correo" required>
             <div id="mensaje3" class="errores"> Correo invalido</div>
             <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" required> <button onclick="generadorcontraseña()"> Generar Contraseña</button>
-            <button type="button" id="mostrar_contraseña"  onclick="mostrarcontraseña()">Mostrar Contraseña</button>
-            <button type="button" id="ocultar_contraseña" style="display: none;" onclick="ocultarcontraseña()">Ocultar Contraseña</button>
+            <input type="password" id="contraseña" name="contraseña" required> <button id="boton" > Generar Contraseña</button>
+            <button type="button" id="mostrar_contraseña"  >Mostrar Contraseña</button>
+            <button type="button" id="ocultar_contraseña" style="display: none;" >Ocultar Contraseña</button>
             <div id="mensaje4" class="errores"> La contraseña debe tener un minimo de 8 caracteres y una mayusculas</div>
 
             <label for="confirmar-contrasena">Confirmar contraseña:</label>
@@ -162,4 +190,15 @@
         })
     </script>
 </body>
+<footer>
+  <nav class="navbar bg-body-tertiary" id="footer">
+    <div class="container-fluid">
+      2024 © Todos los derechos reservados
+      <span class="navbar-text">
+        Servicios al Cliente: <a id="formulario" href="/Registros/registro.html" > <b>Formulario de Contacto</b></a>
+      </span>
+     
+    </div>
+  </nav>
+</footer>
 </html>

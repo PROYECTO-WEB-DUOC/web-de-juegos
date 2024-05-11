@@ -1,9 +1,9 @@
-
+document.addEventListener('DOMContentLoaded', function() {
 function generadorcontraseña() {
         const abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("");
-        var resultado = '';
-        for (var letras = 1; letras <= 8; letras++) {
-            var random = Math.floor(Math.random() * abc.length);
+        let resultado = '';
+        for (let letras = 1; letras <= 8; letras++) {
+            let random = Math.floor(Math.random() * abc.length);
             resultado += abc[random];
         }
     
@@ -15,7 +15,7 @@ function generadorcontraseña() {
 
 
 function mostrarcontraseña(){
-  var mostrar = document.getElementById('contraseña');
+  let mostrar = document.getElementById('contraseña');
         
         mostrar.setAttribute('type','text')
         var contraseña=document.getElementById('mostrar_contraseña')
@@ -26,7 +26,7 @@ function mostrarcontraseña(){
      
 }
 function ocultarcontraseña(){
-        var mostrar = document.getElementById('contraseña');
+        let mostrar = document.getElementById('contraseña');
         
         mostrar.setAttribute('type','password')
         
@@ -37,5 +37,11 @@ function ocultarcontraseña(){
         
 }
        
+let btn = document.getElementById('boton');
+let contraseña=document.getElementById('mostrar_contraseña')
+let ocultar=document.getElementById('ocultar_contraseña')
 
-    
+btn.addEventListener('click',generadorcontraseña);
+contraseña.addEventListener('click',mostrarcontraseña)
+ocultar.addEventListener('click',ocultarcontraseña)
+});
