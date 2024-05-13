@@ -25,9 +25,18 @@ body {
     background-color: #ffffff9a;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    
+    min-width: 50%;
+    max-width: 50%;
 }
-
+@media only screen and (max-width: 768px){
+  .container{
+      
+      max-width: calc(100vw - 42px);
+    
+      
+      
+  }}
 .cuadrado {
     width: auto;
     height: auto;
@@ -36,11 +45,13 @@ body {
     text-align: center;
     line-height: 50px;
     margin-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .registro-form label {
     margin-top: 10px;
     display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .registro-form input[type="text"],
@@ -71,10 +82,11 @@ body {
 
 
 .errores{
-    background-color: red;
+    background-color: rgb(175, 7, 7);
     color: white;
     display: none;
-    position: absolute;
+    position: relative;
+    
     
 }
 

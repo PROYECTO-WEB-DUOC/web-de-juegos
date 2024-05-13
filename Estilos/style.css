@@ -31,8 +31,15 @@ body{
     
 }
 
+.snavbar{
+  background: linear-gradient(rgb(40, 40, 40), rgb(56, 56, 56));;
+  --bs-navbar-active-color: white;
+  
+}
 
-
+.snav-link{
+  color: white;
+}
 
 .registrarse{
     margin-bottom: 1px;
@@ -62,7 +69,7 @@ hr{
     border-color: #0b5ed7;
 }
 
-.card{
+.cards{
     
         
     --bs-card-border-width: 0px;
@@ -72,17 +79,17 @@ hr{
     box-sizing: border-box;
     border: 1px solid black ; 
     margin: 5% 20px;
-  
+   
     max-width: 100%;
     max-height: 100%;
      transition: 1.5s ease;
       -moz-transition: 1.5s ease; /* Firefox */
       -webkit-transition: 1.5s ease; /* Chrome - Safari */
       -o-transition: 1.5s ease; /* Opera */
-    
+      border-radius: 20px;
     
  }
- .card:hover{
+ .cards:hover{
      transform : scale(1.21);
      -moz-transform : scale(1.1); /* Firefox */
      -webkit-transform : scale(1.1); /* Chrome - Safari */
@@ -214,8 +221,10 @@ video{
 
 
 .video {
+  
   position: relative;
   margin-top: 55px;
+  background: linear-gradient(rgb(40, 40, 40), rgb(56, 56, 56));
 }
 
 .boton {
@@ -269,7 +278,7 @@ video{
   }
 }
 
-.contenedor,.contador,.carousel,.card{
+.contenedor,.contador,.carousel,.cards {
   view-timeline-name: --contenedor ;
   view-timeline-axis: block;
 
@@ -314,3 +323,48 @@ text-decoration-line: none;
   font-weight: 500; 
   
 }
+
+.dropdown-item:hover {
+  background-color:#ebeef0;
+}
+.dropdown-item:active {
+  background-color:#0b5ed7;
+}
+
+.contenedor2,.contenedor3,.contenedor4{
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.cards{
+  width: 384px;
+}
+
+.imagen2{
+  width: 100%; height: 300px; border-radius: 20px; 
+}
+
+@media only screen and (max-width: 465px){
+.cards{
+    max-width: calc(100vw - 42px);
+    margin: auto;
+    margin-bottom: 10px;
+    
+}}
+
+.enlace{
+  width: 100%; height: 300px; position: absolute;
+}
+
+@media only screen and (max-width: 768px){
+  .imagen{
+      width: 90%;
+      
+  }}
+  @media only screen and (max-width: 768px){
+    .contador {
+      font-size: 5.0vw;
+      
+      color: #fff;
+  }}
+  
