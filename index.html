@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="miapi.js"></script>
+  
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="script.js"></script>
+    
     <link rel="icon" href="img/icono.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -11,15 +11,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="api.js"></script>
+    <script src="script.js"></script>
+    <script src="cambio-fondo.js"></script>
     <title>Web de Juegos</title>
 </head>
-<body>
+<body id="body"   >
   
   <!-- NAVBAR -->
   
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav  id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" id="navbar_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#">
@@ -35,7 +37,7 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" style="color: black;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" style="color: black;" id="navlink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Juegos
                 </a>
                 <ul class="dropdown-menu">
@@ -63,6 +65,17 @@
             </ul>
             
             <form class="d-flex" role="search">
+              <!-- cambio de fondo-->
+              <div class="dropdown-center" >
+                <button class="btn btn-secondary dropdown-toggle" type="button" style="background-color: transparent; border: none; color: black;" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/—Pngtree—star moon_4491288.png" width="30px" alt="">
+                </button>
+                <ul class="dropdown-menu" >
+                  <li id="blanco"><a class="dropdown-item"   href="" id="fondonegro">Blanco</a></li>
+                  <li id="negro"><a class="dropdown-item " href="" aria-current="true" id="fondoblanco">Negro</a></li>
+                  
+                </ul>
+              </div>
               
               <input class="form-control me-2" type="search" id="texto" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
@@ -121,11 +134,11 @@
 
       
     <!-- VIDEO PRINCIPAL-->
-      <section class="video">
+      <section class="video" >
           
         
           
-          <video src="videos/PS5Brand GameRangeFeel LATAM ES Video 16x9 30sec Digital.mp4" autoplay muted loop ></video>
+          <video id="video" src="videos/PS5Brand GameRangeFeel LATAM ES Video 16x9 30sec Digital.mp4" autoplay muted loop ></video>
         
       </section>
 
@@ -150,66 +163,37 @@
 <!-- CARDS-->
     <section>
       <div class="linea">
-        <h2 class="titulo2">ESTRENOS</h2>
+        <h2 class="titulo2" id="titulo3">ESTRENOS</h2>
         <div class="line"></div>
       </div>
       
       
       <div class="juntar"> <!-- CARDS AL LADO DE Otra-->
         <!-- CARD 1 -->
-        <div class="card mr-3" style="width: 16rem;">
-            <img loading="lazy" src="img/1366_2000.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">God of War Ragnarok</p>
-                <hr>
-                <p class="card-text">Puntuación: 9.5</p>
-            </div>
+        <div class="cards">
+            <a href="Juegos/gow.html" class="enlace" ></a>
+            <img class="imagen2" loading="lazy" src="img/gow carrito.png"  class="card-img-top" alt="...">
+          </div>
             <!--Opcion comprar-->
-            <div class="option-shop">
-              <button  type="button"  class="btn btn-primary"> <a href="/Juegos/gow.html" class="detalles"> Detalles</a></button>
-            </div>
-        </div>
+ 
+   
+        
     
         <!-- CARD 2 -->
-        <div class="card" style="width: 16rem;">
-            <img loading="lazy" src="img/dmc.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Devil May Cry 5</p>
-                <hr>
-                <p class="card-text">Puntuación: 9.3</p>
-            </div>
-            <!--Opcion comprar-->
-            <div class="option-shop">
-              <button  type="button"  class="btn btn-primary"> <a href="/Juegos/dmc.html" class="detalles"> Detalles</a></button>
-            </div>
+        <div class="cards">
+          <a href="Juegos/dmc.html" class="enlace" ></a>
+          <img class="imagen2" loading="lazy" src="img/dmc.webp"  class="card-img-top" alt="...">
         </div>
         <!-- CARD 3-->
         
-        <div class="card" style="width: 16rem;">
-            <img loading="lazy" src="img/images (1).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Bloodborne</p>
-                <hr>
-                <p class="card-text">Puntuación: 10.0</p>
-            </div>
-            <!--Opcion comprar-->
-            <div class="option-shop">
-              <button  type="button"  class="btn btn-primary"> <a href="/Juegos/bloodborne.html" class="detalles"> Detalles</a></button>
-            </div>
+        <div class="cards">
+          <a href="Juegos/bloodborne.html" class="enlace" ></a>
+          <img class="imagen2" loading="lazy" src="img/bloodborne-5k-2880x1800-13122.png" class="card-img-top" alt="...">
         </div>
-
         <!-- CARD 4 -->
-        <div class="card" style="width: 16rem;">
-          <img loading="lazy" src="img/spider-man-2-official-game.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-              <p class="card-text">Spiderman 2</p>
-              <hr>
-              <p class="card-text">Puntuación: 9.8</p>
-          </div>
-          <!--Opcion comprar-->
-          <div class="option-shop">
-            <button  type="button"  class="btn btn-primary"> <a href="/Juegos/spider.html" class="detalles"> Detalles</a></button>
-          </div>
+        <div class="cards">
+          <a href="Juegos/spider.html" class="enlace" ></a>
+          <img class="imagen2" loading="lazy" src="img/spider-man-2-official-game.jpg" class="card-img-top" alt="...">
         </div>
       
   <!--proximamente-->
@@ -217,11 +201,11 @@
   </section>
     <!--proximamente-->
     <div class="linea">
-      <h2 class="titulo2">PROXIMAMENTE</h2>
+      <h2 class="titulo2" id="titulo2">PROXIMAMENTE</h2>
       <div class="line"></div>
     </div>
       <!-- Contador  -->
-      <section class="contador">
+      <section class="contador" id="contador">
         <p>
           <img src="img/Death_Stranding_2_logo.png" width="20%" alt="">
             <span id="days"></span> días : <span id="hours"></span> horas : <span id="minutes"></span> minutos : <span id="seconds"></span> segundos
@@ -231,7 +215,7 @@
     <!-- Fin contador  -->
 
   <div class="linea">
-      <h2 class="titulo2">2025</h2>
+      <h2 class="titulo2" id="titulo">2025</h2>
       <div class="line"></div>
     </div>
     
@@ -267,11 +251,11 @@
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon" id="prev" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon" id="next" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -279,8 +263,8 @@
   </body>
   
 
-<footer>
-  <nav class="navbar bg-body-tertiary" id="footer">
+<footer >
+  <nav class="navbar bg-body-tertiary" id="footer" >
     <div class="container-fluid">
       2024 © Todos los derechos reservados
       <span class="navbar-text">

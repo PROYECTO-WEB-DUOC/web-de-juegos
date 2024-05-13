@@ -60,9 +60,7 @@ body{
 }
 
 
-p{
-  font-size: 10px;
-}
+
   
 h1{
   min-width: 7%;
@@ -245,6 +243,7 @@ html {
 
 .modal-dialog2{
     margin-right:0;
+    margin-right: 10px;
 }
   .modal-content2{
     
@@ -330,4 +329,22 @@ border-radius: 10px;
 }
 .modal-backdrop {
   --bs-backdrop-zindex: 0;
+}
+
+.img-fluid2{
+  width: 230px;
+}
+
+.card-title2{
+  margin-left: 50px;
+}
+
+.card-text{
+  font-size: 20px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
